@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Bad+Script|Caladea&display=swap" rel="stylesheet">
 </head>
@@ -40,22 +38,59 @@
     <div class="container">
         <section id="project">
 
-            <button class="orbit-previous"><span class="show-for-sr">Previous
-                Slide</span>&#9664;&#xFE0E;</button>
-        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+            <button onclick="toggleP1()" id="P1Button">Project 1</button>
+            <button onclick="toggleP2()" id="P2Button">Project 2</button>
+            <button onclick="toggleP3()" id="P3Button">Project 3</button>
+            <button onclick="toggleP4()" id="P4Button">Project 4</button>
 
-            <div class="project-info">
+            <div class="P1" id="P1">
                 <div class="project-info-1">
 
-                    
-
-                    <img class="hw1" src="https://via.placeholder.com/150" />
+                    <img class="hw1" src="./assets/images/cloudcarry.png" />
                     <div class="project-info-content">
-                        <h3>CloudCarry</h3>
+                        <h3>
+                            <a href="https://cloudcarry.herokuapp.com/">CloudCarry</a>
+                        </h3>
+                        <p id="project-paragraph">
+                            CloudCarry is an application to handle the theoretical implementation using taxi-helicopters
+                            at specific 'vertiports' in a metropolitan community.
+                        </p>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="tech-container">
+                    <div class="tech-container-info">
+                        <span class="tech">html</span>
+                    </div>
+                    <div class="tech-container-info">
+                        <span class="tech">js</span>
+                    </div>
+                    <div class="tech-container-info">
+                        <span class="tech">css</span>
+                    </div>
+                    <div class="tech-container-info">
+                        <span class="tech">node & express</span>
+                    </div>
+                    <div class="tech-container-info">
+                        <span class="tech">React.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="P2" id="P2">
+                <div class="project-info-2">
+
+                    <img class="hw2" src="./assets/images/hiddentimber.png" />
+                    <div class="project-info-content">
+                        <h3>
+                            <a href="https://hiddentimberfarm.herokuapp.com/">Hidden Timber Farm</a>
+                        </h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit libero illo iure ducimus
-                            laudantium eligendi quod non quaerat, laboriosam quas maiores blanditiis provident id ipsam
-                            voluptas odio quia facere exercitationem.
+                            Hidden Timber Farm Stable Management app is for small horse boarding operations needing a
+                            way to market to potential boarders, manage a horse and owner database, and communicate with
+                            existing clients.
                         </p>
                     </div>
                 </div>
@@ -76,60 +111,140 @@
                         <span class="tech">node</span>
                     </div>
                 </div>
+            </div>
 
+            <div class="P3" id="P3">
+                <div class="project-info-3">
 
-                <!-- <div class="project-next">
-                <p class="project-next-btn"><a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a></p>
-            </div> -->
+                    <img class="hw3" src="./assets/images/trains.png" />
+                    <div class="project-info-content">
+                        <h3>
+                            <a href="https://umbachg.github.io/train-scheduler/">Train Schedule</a>
+                        </h3>
+                        <p>
+                            This is a train schedule application that incorporates Firebase to host arrival and
+                            departure data. This app retrieves and manipulates this information with Moment.js.
+                        </p>
+                    </div>
+                </div>
 
+                <hr />
 
-                <div class="project-info-2">
-                <img class="hw2" src="https://via.placeholder.com/150" />
-                <div class="project-info-content">
-                    <h3>aersndtmjy dryyjdth</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit libero illo iure ducimus
-                        laudantium eligendi quod non quaerat, laboriosam quas maiores blanditiis provident id ipsam
-                        voluptas odio quia facere exercitationem.
-                    </p>
+                <div class="tech-container">
+                    <div class="tech-container-info">
+                        <span class="tech">html</span>
+                    </div>
+                    <div class="tech-container-info">
+                        <span class="tech">js</span>
+                    </div>
+                    <div class="tech-container-info">
+                        <span class="tech">css</span>
+                    </div>
+                    <div class="tech-container-info">
+                        <span class="tech">Moment.js</span>
+                    </div>
                 </div>
             </div>
 
-            <hr />
+            <div class="P4" id="P4">
+                <div class="project-info-4">
 
-            <div class="tech-container">
-                <div class="tech-container-info">
-                    <span class="tech">html</span>
+                    <img class="hw4" src="./assets/images/wordguess.png" />
+                    <div class="project-info-content">
+                        <h3>
+                            <a href="https://umbachg.github.io/Word-Guess-Game/">Word Guess Game</a>
+                        </h3>
+                        <p>
+                            This is a game played similar to hangman. Your goal is to guess the names of influential
+                            female coders. When the correct name is guessed a card with that persons history pops up.
+                        </p>
+                    </div>
                 </div>
-                <div class="tech-container-info">
-                    <span class="tech">js</span>
-                </div>
-                <div class="tech-container-info">
-                    <span class="tech">css</span>
-                </div>
-                <div class="tech-container-info">
-                    <span class="tech">node</span>
+
+                <hr />
+
+                <div class="tech-container">
+                    <div class="tech-container-info">
+                        <span class="tech">html</span>
+                    </div>
+                    <div class="tech-container-info">
+                        <span class="tech">js</span>
+                    </div>
+                    <div class="tech-container-info">
+                        <span class="tech">css</span>
+                    </div>
+                    <div class="tech-container-info">
+                        <span class="tech">Bootstrap</span>
+                    </div>
                 </div>
             </div>
-
-            <div class="project-next">
-                <p class="project-next-btn"><a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a></p>
-            </div>
-
-            </div>
-
-            <nav class="orbit-bullets">
-                <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span
-                        class="show-for-sr">Current Slide</span></button>
-                <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-                <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-                <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-            </nav>
 
         </section>
     </div>
 
-    <!-- <script src="./assets/animations/animations.js"></script> -->
+    <script>
+        function toggleP1() {
+            var myProject = document.getElementById('P1');
+            var displaySetting = myProject.style.display;
+            var P1Button = document.getElementById('P1Button');
+
+            if (displaySetting == 'block') {
+                myProject.style.display = 'none';
+                P1Button.innerHTML = 'Show Project 1';
+            }
+            else {
+                myProject.style.display = 'block';
+                P1Button.innerHTML = 'Hide Project 1';
+            }
+        }
+
+        function toggleP2() {
+
+            var myProject = document.getElementById('P2');
+            var displaySetting = myProject.style.display;
+            var P2Button = document.getElementById('P2Button');
+
+            if (displaySetting == 'block') {
+                myProject.style.display = 'none';
+                P2Button.innerHTML = 'Show Project 2';
+            }
+            else {
+                myProject.style.display = 'block';
+                P2Button.innerHTML = 'Hide Project 2';
+            }
+        }
+
+        function toggleP3() {
+            var myProject = document.getElementById('P3');
+            var displaySetting = myProject.style.display;
+            var P3Button = document.getElementById('P3Button');
+
+            if (displaySetting == 'block') {
+                myProject.style.display = 'none';
+                P3Button.innerHTML = 'Show Project 3';
+            }
+            else {
+                myProject.style.display = 'block';
+                P3Button.innerHTML = 'Hide Project 3';
+            }
+        }
+
+        function toggleP4() {
+            var myProject = document.getElementById('P4');
+            var displaySetting = myProject.style.display;
+            var P4Button = document.getElementById('P4Button');
+
+            if (displaySetting == 'block') {
+                myProject.style.display = 'none';
+                P4Button.innerHTML = 'Show Project 4';
+            }
+            else {
+                myProject.style.display = 'block';
+                P4Button.innerHTML = 'Hide Project 4';
+            }
+        }
+
+    </script>
 
 </body>
 
